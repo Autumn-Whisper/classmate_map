@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页脚</title>
+    <link rel="stylesheet" href="code/footer/footer.css">
+</head>
+<body>
+    <footer class="footer">
+        <p>版权所有 &copy; 2021 - <span id="current-year"></span> 示例组织</p>
+    </footer>
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
+</body>
+</html>

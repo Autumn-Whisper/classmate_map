@@ -1,0 +1,142 @@
+main {
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  main .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  /* 文章内容和两边的分界线 */
+  main::before,
+  main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 127, 80, 0.2);
+  }
+  
+  main::before {
+    left: calc((100% - 1200px) / 2 - 20px);
+  }
+  
+  main::after {
+    right: calc((100% - 1200px) / 2 - 20px);
+  }
+  
+  /* 标题 */
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #ff7f50;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  main h1 {
+    font-size: 2em;
+  }
+  
+  main h2 {
+    font-size: 1.75em;
+  }
+  
+  main h3 {
+    font-size: 1.5em;
+  }
+  
+  main h4 {
+    font-size: 1.25em;
+  }
+  
+  main h5 {
+    font-size: 1em;
+  }
+  
+  main h6 {
+    font-size: 0.875em;
+  }
+
+    /* 文章内容 */
+  main p {
+    margin: 0 0 1em 0;
+    color: #333;
+  }
+  
+  /* 文章内容中的链接 */
+  main a {
+    color: #ff7f50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  main a:hover {
+    color: #f36b33;
+  }
+  
+  /* 文章内容中的引用 */
+  main pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    overflow-x: auto;
+  }
+  
+  /* 文章内容中的代码 */
+  main code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+  
+  /* 文章内容中的引用 */
+  main blockquote {
+    border-left: 4px solid #ff7f50;
+    padding: 0 1em;
+    margin: 1em 0;
+    color: #666;
+    font-style: italic;
+  }
+
+  /* 文章内容中的图片 */
+  main img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* 文章内容中的列表 */
+  main ul, main ol {
+    padding-left: 2em;
+    margin: 1em 0;
+  }
+  
+  main ul li, main ol li {
+    margin-bottom: 0.5em;
+  }
+  /* 文章内容中的表格 */
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+  }
+  
+  main table, main th, main td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+  }
+  
+  main table th {
+    font-weight: bold;
+    background-color: #f8f8f8;
+  }
+  
+  main table tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
